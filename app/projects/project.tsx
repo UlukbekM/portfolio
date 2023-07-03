@@ -28,6 +28,7 @@ const images = {
 
 export default function Project (item:projectsInterface) {
     let { title, github, description, icons, link, date, imageURL } = item
+    // https://www.embla-carousel.com/get-started/react/
     // console.log(item)
     return(
     // <div className="h-auto my-10 flex rounded-lg">

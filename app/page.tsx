@@ -121,10 +121,10 @@ export default function Home() {
             <motion.div
             initial={{ opacity: 0}}
             animate={{ opacity: 1}}
-            transition={{ duration: 0.4, delay: 2.3 }}
+            transition={{ duration: 0.4, delay: 2 }}
             className="flex justify-center md:justify-end">
-                <Link href="/contact">
-                    <button className="py-3 px-5 text-white bg-[#6246ea] hover:bg-[#583fd3] rounded-lg focus:ring-4 focus:outline-none">Contact Me <i className="bi bi-arrow-right"></i></button>
+                <Link href="/about">
+                    <button className="py-3 px-5 text-white bg-[#6246ea] hover:bg-[#583fd3] rounded-lg focus:ring-4 focus:outline-none">About Me <i className="bi bi-arrow-right"></i></button>
                 </Link>
             </motion.div>
             
