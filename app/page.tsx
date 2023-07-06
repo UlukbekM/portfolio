@@ -7,6 +7,7 @@ import Link from "next/link"
 import { url } from "inspector";
 import { projectsList } from "./ProjectContainer/projectsList";
 import HomeProject from "./HomeProject";
+import Project from "./projects/project";
 
 const typingContainer = {
     hidden: {
@@ -161,9 +162,12 @@ export default function Home() {
                 animate={{ opacity: 1}}
                 transition={{ duration: 0.6,delay: 2.5}} 
                 className="">
-                    <HomeProject key="not-twitter-home" {...projectsList[0]}/>
+                    {/* <HomeProject key="not-twitter-home" {...projectsList[0]}/>
                     <HomeProject key="guessify-home" {...projectsList[2]}/>
-                    <HomeProject key="movie-buddy-home" {...projectsList[3]}/>
+                    <HomeProject key="movie-buddy-home" {...projectsList[3]}/> */}
+                    <Project key="not-twitter-home" {...projectsList[0]}/>
+                    <Project key="guessify-home" {...projectsList[2]}/>
+                    <Project key="movie-buddy-home" {...projectsList[3]}/>
                 </motion.div>
                 <div className="w-full grid place-items-center">
                     <Link href="/projects">

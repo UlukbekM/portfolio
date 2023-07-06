@@ -62,7 +62,7 @@ export default function About () {
             </div>
         </div>
 
-        <div> 
+        <div className="mb-5"> 
             <div className="flex flex-wrap flex-col md:flex-row justify-between ">
                 <div className="py-2 mb-3">
                     <i className="bi bi-geo-alt-fill px-2 text-xl"/>
