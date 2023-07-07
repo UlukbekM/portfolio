@@ -17,7 +17,7 @@ export default function Projects () {
     
     return(<div>
             <h1 className="text-4xl">Projects</h1>
-            <div className="container">
+            <div className="container  mb-10">
                 {/* <div className="flex flex-wrap justify-center"> */}
                 <motion.div
                 // variants={variants}

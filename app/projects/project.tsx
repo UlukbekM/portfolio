@@ -78,7 +78,7 @@ export default function Project (item:projectsInterface) {
         // whileInView={{ opacity: 1, y: 0 }}
         // viewport={{ once: true }}
         // lg:w-1/2
-        className="px-2 my-5 lg:px-5 lg:my-7 ">
+        className="px-2 lg:px-5 lg:my-7 ">
             {/* // <div className="px-2 my-5 lg:px-5 lg:my-7 lg:w-1/2"> */}
                 <div className="embla overflow-hidden rounded-lg cursor-grab">
                     <div className="embla__viewport relative" ref={emblaRef}>
@@ -90,13 +90,13 @@ export default function Project (item:projectsInterface) {
                         
                         <div className=" absolute top-0 left-0 right-0 bottom-0 align-middle">
                             <div className="flex justify-between h-full">
-                                <div className="bg-black h-1/3 my-auto bg-opacity-20 hover:bg-opacity-80 rounded-tr-lg rounded-br-lg">
-                                    <button className="embla__prev h-full" onClick={scrollPrev}>
+                                <div className="bg-gray-500 dark:bg-gray-500 h-1/3 my-auto bg-opacity-20 dark:bg-opacity-20 dark:hover:bg-opacity-60 hover:bg-opacity-60 rounded-tr-lg rounded-br-lg">
+                                    <button className="embla__prev h-full text-white" onClick={scrollPrev}>
                                         <i className="bi bi-chevron-left text-3xl "></i>
                                     </button>
                                 </div>
-                                <div className="bg-black h-1/3 my-auto bg-opacity-20 hover:bg-opacity-80 rounded-tl-lg rounded-bl-lg">
-                                    <button className="embla__prev h-full" onClick={scrollNext}>
+                                <div className="bg-gray-500 dark:bg-gray-500 h-1/3 my-auto bg-opacity-20 dark:bg-opacity-20 dark:hover:bg-opacity-60 hover:bg-opacity-60 rounded-tl-lg rounded-bl-lg">
+                                    <button className="embla__prev h-full text-white" onClick={scrollNext}>
                                         <i className="bi bi-chevron-right text-3xl "></i>
                                     </button>
                                 </div>
@@ -107,7 +107,7 @@ export default function Project (item:projectsInterface) {
 
                 <div className="flex my-2 justify-between flex-col lg:flex-row md:flex-row">
                     <h3 className="text-3xl font-bold lg:tracking-wider md:tracking-wider text-gray-900 dark:text-gray-100 my-auto lg:basis-3/4">{title}</h3>
-                    <h5 className="my-auto text-slate-500 dark:text-slate-400 lg:basis-1/4 lg:text-right">{date}</h5>
+                    <h5 className="my-auto text-[#1A1A1A] dark:text-[#EBEBEB] lg:basis-1/4 lg:text-right">{date}</h5>
                 </div>
 
                 <div className="flex justify-between my-2 flex-col lg:flex-row md:flex-row lg:basis-4/5">
@@ -124,9 +124,9 @@ export default function Project (item:projectsInterface) {
                         </a>
                     </div>
                 </div>
-
+{/* text-slate-500 dark:text-slate-400  */}
                 <div>
-                    <p className="basis-3/5 text-slate-500 dark:text-slate-400">{description}</p>
+                    <p className="basis-3/5 text-[#1A1A1A] dark:text-[#EBEBEB]">{description}</p>
                 </div>
         </motion.div>
     </motion.div>

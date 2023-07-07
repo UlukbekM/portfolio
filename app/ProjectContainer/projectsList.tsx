@@ -37,7 +37,7 @@ export var projectsList = [
         title: "Guessify",
         github: "https://github.com/UlukbekM/guessify",
         link: "https://guessify-ulukbek.vercel.app/",
-        description: "A Spotify web application using the Spotify Web API that features a 'Guess That Song' game where users can choose a playlist from the Spotify API and attempt to guess the title of each song by listening to a short audio preview, with a leaderboard tracking the highest-scoring users using AWS DynamoDB as the database",
+        description: "A Spotify web application using the Spotify Web API that features a 'Guess That Song' game where users can choose a playlist from the Spotify API and attempt to guess the title of each song by listening to a short audio preview, with a leaderboard tracking the highest-scoring users using AWS DynamoDB as the database.",
         icons: "React, AWS DynamoDB, Spotify Web API",
         date: "Oct. 2022",
         imageURL: "https://i.imgur.com/WEgqhzh.png",
