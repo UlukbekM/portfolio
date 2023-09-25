@@ -3,6 +3,7 @@ import { Inter } from 'next/font/google'
 import { Prompt } from 'next/font/google'
 import Header from './Header/header'
 import { Providers } from './Providers'
+import { Analytics } from '@vercel/analytics/react';
 
 // https://tailwind-nextjs-starter-blog.vercel.app/blog
 
@@ -36,6 +37,7 @@ export default function RootLayout({
                     <div className="mt-28">
                         {children}
                     </div>
+                    <Analytics />
                 </Providers>
             </body>
         </html>

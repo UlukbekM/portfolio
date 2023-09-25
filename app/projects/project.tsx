@@ -3,6 +3,7 @@
 import { useEffect, useCallback } from "react"
 import { motion } from "framer-motion"
 import useEmblaCarousel from 'embla-carousel-react'
+// import BubbleSort from "../ProjectContainer/bubble-sort.gif"
 
 interface projectsInterface {
     title: string,
@@ -12,7 +13,8 @@ interface projectsInterface {
     icons: string,
     date: string,
     imageURL: string,
-    images: string[]
+    images: string[],
+    // gifs: boolean
 }
 
 const imageAnimation = {
@@ -49,7 +51,8 @@ const cardVariants= {
 export default function Project (item:projectsInterface) {
     let { title, github, description, icons, link, date, imageURL, images } = item
     // https://www.embla-carousel.com/get-started/react/
-    // console.log(images)
+    // if(gifs)console.log(gifs)
+
 
     const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true })
 
@@ -87,6 +90,25 @@ export default function Project (item:projectsInterface) {
                                 <img src={img} className="w-max embla__slide" alt={title}/>
                             ))}
                         </div>
+
+                        {/* {gifs ?
+                            <div className="embla__container flex">
+                                <img src="https://i.imgur.com/VegvgPO.png" className="w-max embla__slide" alt={title}/>
+                                <img src={"/insertion-sort.gif"} className="w-max embla__slide" alt={"insertion sort"}/>
+                                <img src={"/bubble-sort.gif"} className="w-max embla__slide" alt={"bubble sort"}/>
+                                <img src={"/selection-sort.gif"} className="w-max embla__slide" alt={"selection sort"}/>
+                                <img src={"/shell-sort.gif"} className="w-max embla__slide" alt={"shell sort"}/>
+                                <img src={"/merge-sort.gif"} className="w-max embla__slide" alt={"merge sort"}/>
+                                <img src={"/heap-sort.gif"} className="w-max embla__slide" alt={"heap sort"}/>
+                                <img src={"/quick-sort.gif"} className="w-max embla__slide" alt={"quick sort"}/>
+                            </div>
+                            :
+                            <div className="embla__container flex">
+                                {images.map((img) => (
+                                    <img src={img} className="w-max embla__slide" alt={title}/>
+                                ))}
+                            </div>
+                        } */}
                         
                         <div className=" absolute top-0 left-0 right-0 bottom-0 align-middle">
                             <div className="flex justify-between h-full">

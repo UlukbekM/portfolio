@@ -166,8 +166,8 @@ export default function Home() {
                     <HomeProject key="guessify-home" {...projectsList[2]}/>
                     <HomeProject key="movie-buddy-home" {...projectsList[3]}/> */}
                     <Project key="not-twitter-home" {...projectsList[0]}/>
-                    <Project key="guessify-home" {...projectsList[2]}/>
-                    <Project key="movie-buddy-home" {...projectsList[3]}/>
+                    <Project key="guessify-home" {...projectsList[1]}/>
+                    <Project key="movie-buddy-home" {...projectsList[2]}/>
                 </motion.div>
                 <div className="w-full grid place-items-center">
                     <Link href="/projects">
