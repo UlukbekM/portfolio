@@ -7,7 +7,7 @@ import { NavMain } from "./NavItem"
 export default function Header () {
     return(
     // <header className="flex justify-between items-center py-5 sticky top-0 z-50 bg-inherit">
-    <header className="flex justify-between items-center p-5 bg-inherit fixed top-0 z-50 left-0 right-0 ">
+    <header className="flex justify-between items-center p-5 bg-inherit fixed top-0 z-50 left-0 right-0">
         <div className="text-3xl font-bold text-gray-900 dark:text-gray-100 hover:text-gray-500 hover:dark:text-gray-300 cursor-pointer md:ml-10 lg:ml-20">
             {/* <Link href="/" className="md:hidden">Ulukbek M.</Link>
             <Link href="/" className="hidden md:block ">Ulukbek Mambetov</Link> */}

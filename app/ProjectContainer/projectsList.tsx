@@ -65,19 +65,16 @@ export var projectsList = [
             "https://i.imgur.com/4pPhUgj.png"
         ]
     },
-    // {
-    //     title: "Sorting Algorithm Visualizer",
-    //     github: "https://github.com/UlukbekM/mern",
-    //     link: "https://mernfront.vercel.app/",
-    //     description: "Implemented a full stack application utilizing the MERN (MongoDB, Express.js, React, Node.js) stack, enabling users to create, edit, and manage their personal tasks, complete with due dates and status tracking.",
-    //     icons: "MongoDB, Express.js, React, Node.js",
-    //     date: "Nov. 2022",
-    //     imageURL: "https://i.imgur.com/Clr3szE.png",
-    //     images: [
-    //         "https://i.imgur.com/VegvgPO.png",
-    //     ],
-    //     gifs: true
-    // },
+    {
+        title: "Sorting Algorithm Visualizer",
+        github: "https://github.com/UlukbekM/mern",
+        link: "https://mernfront.vercel.app/",
+        description: "Implemented a full stack application utilizing the MERN (MongoDB, Express.js, React, Node.js) stack, enabling users to create, edit, and manage their personal tasks, complete with due dates and status tracking.",
+        icons: "MongoDB, Express.js, React, Node.js",
+        date: "Nov. 2022",
+        imageURL: "https://i.imgur.com/WSnIDOx.png",
+        images: ["https://i.imgur.com/WSnIDOx.png"]
+    },
     {
         title: "Tasks App",
         github: "https://github.com/UlukbekM/mern",

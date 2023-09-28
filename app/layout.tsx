@@ -37,8 +37,8 @@ export default function RootLayout({
                     <div className="mt-28">
                         {children}
                     </div>
-                    <Analytics />
                 </Providers>
+                <Analytics />
             </body>
         </html>
     )

@@ -53,6 +53,11 @@ export default function Project (item:projectsInterface) {
     // https://www.embla-carousel.com/get-started/react/
     // if(gifs)console.log(gifs)
 
+    // if(images.length === 0) {
+    //     console.log('no images for ' + title)
+    // }
+
+    // console.log(title + images)
 
     const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true })
 
@@ -81,13 +86,13 @@ export default function Project (item:projectsInterface) {
         // whileInView={{ opacity: 1, y: 0 }}
         // viewport={{ once: true }}
         // lg:w-1/2
-        className="px-2 lg:px-5 lg:my-7 ">
+        className="px-2 lg:px-5 lg:my-7 my-5">
             {/* // <div className="px-2 my-5 lg:px-5 lg:my-7 lg:w-1/2"> */}
                 <div className="embla overflow-hidden rounded-lg cursor-grab">
                     <div className="embla__viewport relative" ref={emblaRef}>
                         <div className="embla__container flex">
-                            {images.map((img) => (
-                                <img src={img} className="w-max embla__slide" alt={title}/>
+                            {images.map((img,index) => (
+                                <img src={img} className="w-max embla__slide" alt={title} key={index}/>
                             ))}
                         </div>
 
