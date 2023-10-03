@@ -67,13 +67,16 @@ export var projectsList = [
     },
     {
         title: "Sorting Algorithm Visualizer",
-        github: "https://github.com/UlukbekM/mern",
-        link: "https://mernfront.vercel.app/",
-        description: "Implemented a full stack application utilizing the MERN (MongoDB, Express.js, React, Node.js) stack, enabling users to create, edit, and manage their personal tasks, complete with due dates and status tracking.",
-        icons: "MongoDB, Express.js, React, Node.js",
-        date: "Nov. 2022",
+        github: "https://github.com/UlukbekM/sorting",
+        link: "https://sorting-algorithms-ulukbek.vercel.app/",
+        description: "Built a React-based sorting algorithm visualizer featuring quick sort, merge sort, insertion sort, and more. Allows interactive exploration of sorting processes, enhancing algorithmic understanding.",
+        icons: "React, Tailwind CSS",
+        date: "Aug. 2023",
         imageURL: "https://i.imgur.com/WSnIDOx.png",
-        images: ["https://i.imgur.com/WSnIDOx.png"]
+        images: [
+                "https://i.imgur.com/WSnIDOx.png",
+                "https://i.imgur.com/4IUxm73.png",
+                "https://i.imgur.com/wCNv6gp.png"]
     },
     {
         title: "Tasks App",
