@@ -26,7 +26,6 @@ export default function MobileHeader () {
 
         <div className={`fixed top-0 left-0 z-10 h-full w-full transform  opacity-95 duration-300 ease-in-out bg-zinc-200 dark:bg-zinc-900 translate-x-0 ${
             sideNav ? 'translate-x-0' : 'translate-x-full'}`} > 
-            {/* bg-gray-200 */}
             <div className="flex justify-end">
                 <button className="mr-6 mt-10 h-8 w-8 rounded"><i className="bi bi-x-lg text-2xl" onClick={onToggleNav}></i></button>
             </div>

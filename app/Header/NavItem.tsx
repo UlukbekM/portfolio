@@ -22,13 +22,8 @@ export default function NavItem ({title,href}:titleProps) {
 
 export function NavMain () {
     let router = usePathname()
-    // console.log(router)
     return(<div>
-        {/* <Link href="/" className={`md:hidden ${router === "/" && "hidden"}`}>Ulukbek M.</Link> */}
-        {/* <Link href="/" className={`hidden ${router !== "/" && "md:block"}`}>Ulukbek Mambetov</Link> */}
         <Link href="/" className={`md:hidden`}>Ulukbek M.</Link>
         <Link href="/" className={`hidden md:block`}>Ulukbek Mambetov</Link>
-        {/* <Link href="/" className={`md:hidden`}>Ulukbek M.</Link>
-        <Link href="/" className={`hidden ${router !== "/" && "md:block"}`}>Ulukbek Mambetov</Link> */}
     </div>)
 }

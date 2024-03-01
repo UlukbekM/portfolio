@@ -30,25 +30,14 @@ const cardVariants= {
 };
 
 export default function HomeProject (item:projectsInterface) {
-    // console.log(item)
     return(
     <motion.div
-    
-
-        //   <motion.div
-            // initial={{ opacity: 0, y: 20 }}
-            // whileInView={{ opacity: 1, y: 0 ,}}
-            // viewport={{ once: true, amount: 0.5 }}
-            // transition={{ duration: 0.5, delay: 2 }}
     initial="offscreen"
     whileInView="onscreen"
     viewport={{ once: true, amount: 0.5 }}
     transition={{ duration: 1, delay: 2,}}
     className="my-8 ">
         <motion.div 
-            // whileHover={{ scale: 1.025 }}
-            // transition={{ type: "spring", stiffness: 400, damping: 10 }}
-            // whileTap={{ scale: 0.95 }}
             variants={cardVariants}
             className="flex flex-col">
             <div>
@@ -72,26 +61,5 @@ export default function HomeProject (item:projectsInterface) {
         </div>
         </motion.div>
     </motion.div>
-    
-    // <div className="my-8 min-h-[100px] h-[500px] bg-cover grayscale hover:grayscale-0 ease-in-out duration-75 rounded-lg group flex content-end" style={{
-    //     backgroundImage: `url(${item.imageURL})`,
-    // }}>
-    //     <div className="p-5 group-hover:block hidden">
-    //         <div className="flex justify-between">
-    //             <h1 className="text-2xl font-bold my-2 text-[#6246ea]">{item.title}</h1>
-    //                 <div className="my-2">
-    //                     <a href={item.github} target="_blank" rel="noopener noreferrer">
-    //                         <i className="bi bi-github text-2xl mr-4 transition ease-in-out duration-75 hover:cursor-pointer hover:text-[#6246ea]"/> 
-    //                     </a>
-    //                     <a href={item.link} target="_blank" rel="noopener noreferrer">
-    //                         <i className="bi bi-box-arrow-up-right text-2xl transition ease-in-out duration-75 hover:cursor-pointer hover:text-[#6246ea]"/>
-    //                     </a>
-    //                 </div>
-    //         </div>
-    //         <div className="mb-5">
-    //             {item.description}
-    //         </div>
-    //     </div>
-    // </div>
     )
 }

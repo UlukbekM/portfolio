@@ -1,12 +1,8 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { useTheme } from "next-themes"
-import { useEffect, useState } from "react";
 import Link from "next/link"
-import { url } from "inspector";
 import { projectsList } from "./ProjectContainer/projectsList";
-import HomeProject from "./HomeProject";
 import Project from "./projects/project";
 
 const typingContainer = {
@@ -52,12 +48,7 @@ const typingText = {
     }
 }
 
-export default function Home() {
-    // https://aitdahmane.com/
-    // https://hanna.framer.website/
-    // https://developertemplate.webflow.io/home
-    // https://arcade.la/
-    
+export default function Home() {    
     return (
         <div className="md:py-12 min-h-screen">
             <motion.h1 className="font-bold text-3xl md:text-5xl my-3" variants={typingContainer} initial="hidden" animate="show">
@@ -120,15 +111,6 @@ export default function Home() {
                 className="text-3xl">
                     Some of my work:
                 </motion.h1>
-
-
-                    {/* <HomeProject key="not-twitter-home" {...projectsList[0]}/>
-                    <HomeProject key="guessify-home" {...projectsList[2]}/>
-                    <HomeProject key="movie-buddy-home" {...projectsList[3]}/> */}
-                    {/* <Project key="Not-Twitter" {...projectsList[0]}/>
-                    <Project key="Guessify" {...projectsList[1]}/>
-                    <Project key="Movie Buddy" {...projectsList[2]}/> */}
-
                 <motion.div
                 initial={{ opacity: 0}}
                 animate={{ opacity: 1}}
@@ -139,17 +121,20 @@ export default function Home() {
                     ))}
                 </motion.div>
                 
-                <div className="w-full grid place-items-center">
+                <motion.div
+                initial={{ opacity: 0}}
+                animate={{ opacity: 1}}
+                transition={{ duration: 0.6,delay: 2.5}} 
+                className="w-full grid place-items-center">
                     <Link href="/projects">
                         <button className="py-3 px-5 text-white bg-[#6246ea] hover:bg-[#583fd3] rounded-lg focus:ring-4 focus:outline-none my-auto group">
                             View More 
-                            {/* <i className="bi bi-arrow-right"></i> */}
                             <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
                             &nbsp;<i className="bi bi-arrow-right"></i>
                             </span>
                             </button>
                     </Link>
-                </div>
+                </motion.div>
             </div>
         </div>
     )

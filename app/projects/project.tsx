@@ -1,9 +1,7 @@
-// import Image from "next/image"
 "use client"
 import { useEffect, useCallback } from "react"
 import { motion } from "framer-motion"
 import useEmblaCarousel from 'embla-carousel-react'
-// import BubbleSort from "../ProjectContainer/bubble-sort.gif"
 
 interface projectsInterface {
     title: string,
@@ -14,7 +12,6 @@ interface projectsInterface {
     date: string,
     imageURL: string,
     images: string[],
-    // gifs: boolean
 }
 
 const imageAnimation = {
@@ -50,14 +47,6 @@ const cardVariants= {
 
 export default function Project (item:projectsInterface) {
     let { title, github, description, icons, link, date, imageURL, images } = item
-    // https://www.embla-carousel.com/get-started/react/
-    // if(gifs)console.log(gifs)
-
-    // if(images.length === 0) {
-    //     console.log('no images for ' + title)
-    // }
-
-    // console.log(title + images)
 
     const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true })
 
@@ -78,16 +67,8 @@ export default function Project (item:projectsInterface) {
         className="">
 
         <motion.div
-        // variants={variants}
-        // initial="hidden"
-        // animate="show"
         variants={cardVariants}
-        // initial={{ opacity: 0, y: 100 }}
-        // whileInView={{ opacity: 1, y: 0 }}
-        // viewport={{ once: true }}
-        // lg:w-1/2
         className="px-2 lg:px-5 lg:my-7 my-5">
-            {/* // <div className="px-2 my-5 lg:px-5 lg:my-7 lg:w-1/2"> */}
                 <div className="embla overflow-hidden rounded-lg cursor-grab">
                     <div className="embla__viewport relative" ref={emblaRef}>
                         <div className="embla__container flex">
@@ -96,25 +77,6 @@ export default function Project (item:projectsInterface) {
                             ))}
                         </div>
 
-                        {/* {gifs ?
-                            <div className="embla__container flex">
-                                <img src="https://i.imgur.com/VegvgPO.png" className="w-max embla__slide" alt={title}/>
-                                <img src={"/insertion-sort.gif"} className="w-max embla__slide" alt={"insertion sort"}/>
-                                <img src={"/bubble-sort.gif"} className="w-max embla__slide" alt={"bubble sort"}/>
-                                <img src={"/selection-sort.gif"} className="w-max embla__slide" alt={"selection sort"}/>
-                                <img src={"/shell-sort.gif"} className="w-max embla__slide" alt={"shell sort"}/>
-                                <img src={"/merge-sort.gif"} className="w-max embla__slide" alt={"merge sort"}/>
-                                <img src={"/heap-sort.gif"} className="w-max embla__slide" alt={"heap sort"}/>
-                                <img src={"/quick-sort.gif"} className="w-max embla__slide" alt={"quick sort"}/>
-                            </div>
-                            :
-                            <div className="embla__container flex">
-                                {images.map((img) => (
-                                    <img src={img} className="w-max embla__slide" alt={title}/>
-                                ))}
-                            </div>
-                        } */}
-                        
                         <div className=" absolute top-0 left-0 right-0 bottom-0 align-middle">
                             <div className="flex justify-between h-full">
                                 <div className="bg-gray-500 dark:bg-gray-500 h-1/3 my-auto bg-opacity-20 dark:bg-opacity-20 dark:hover:bg-opacity-60 hover:bg-opacity-60 rounded-tr-lg rounded-br-lg">
@@ -151,7 +113,6 @@ export default function Project (item:projectsInterface) {
                         </a>
                     </div>
                 </div>
-{/* text-slate-500 dark:text-slate-400  */}
                 <div>
                     <p className="basis-3/5 text-[#1A1A1A] dark:text-[#EBEBEB]">{description}</p>
                 </div>

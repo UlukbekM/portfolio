@@ -4,6 +4,7 @@ import { Prompt } from 'next/font/google'
 import Header from './Header/header'
 import { Providers } from './Providers'
 import { Analytics } from '@vercel/analytics/react';
+import Footer from './footer'
 
 // https://tailwind-nextjs-starter-blog.vercel.app/blog
 
@@ -27,16 +28,16 @@ export default function RootLayout({
     return (
         <html lang="en">
             <head>
-                {/* <link rel="icon" href="/UM.png" /> */}
                 <link rel="shortcut icon" href="/favicon.ico" />
                 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"/>
             </head>
-            <body className={`${prompt.className} mx-auto px-5 sm:px-6 xl:px-0 overflow-y-scroll max-w-2xl md:max-w-3xl lg:max-w-4xl xl:max-w-5xl bg-gradient-to-tl` }>
+            <body className={`${prompt.className} overflow-y-scroll` }>
                 <Providers>
                     <Header/>
-                    <div className="mt-28">
+                    <div className="mt-28 mx-auto px-5 sm:px-6 xl:px-0 max-w-2xl md:max-w-3xl lg:max-w-4xl xl:max-w-5xl bg-gradient-to-tl">
                         {children}
                     </div>
+                    {/* <Footer/> */}
                 </Providers>
                 <Analytics />
             </body>

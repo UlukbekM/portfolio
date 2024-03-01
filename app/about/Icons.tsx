@@ -1,6 +1,6 @@
 import { SiJavascript, SiTypescript, SiPython, SiHtml5, SiTailwindcss, SiSwift,SiCss3,SiCplusplus,
     SiReact,SiNextdotjs,SiBootstrap,SiNodedotjs,SiExpress,SiMui, SiAmazonaws,SiGit,SiMongodb,
-    SiGithub,SiVisualstudiocode,SiXcode,SiVercel,SiPostman,SiMysql} from "react-icons/si"
+    SiGithub,SiVisualstudiocode,SiXcode,SiVercel,SiPostman,SiMysql,SiRedux } from "react-icons/si"
 
 export const LanguageList = [
     {
@@ -27,10 +27,10 @@ export const LanguageList = [
         name: "C++",
         icon: <SiCplusplus className="text-[#00599C]"/>
     },
-    {
-        name: "Swift",
-        icon: <SiSwift className="text-[#F05138]"/>
-    },
+    // {
+    //     name: "Swift",
+    //     icon: <SiSwift className="text-[#F05138]"/>
+    // },
 
 ]
 
@@ -38,14 +38,6 @@ export const FrameworksLibrariesList = [
     {
         name: "React",
         icon: <SiReact className="text-[#61DAFB]"/>
-    },
-    {
-        name: "Node.js",
-        icon: <SiNodedotjs className="text-[#339933]"/>
-    },
-    {
-        name: "Express",
-        icon: <SiExpress className="light:text-[#000000]"/>
     },
     {
         name: "Next.js",
@@ -56,6 +48,18 @@ export const FrameworksLibrariesList = [
         icon: <SiTailwindcss className="text-[#06B6D4]"/>
     },
     {
+        name: "Redux",
+        icon: <SiRedux className="text-[#764abc]"/>
+    },
+    {
+        name: "Node.js",
+        icon: <SiNodedotjs className="text-[#339933]"/>
+    },
+    {
+        name: "Express",
+        icon: <SiExpress className="light:text-[#000000]"/>
+    },
+    {
         name: "Bootstrap",
         icon: <SiBootstrap className="text-[#7952B3]"/>
     },
@@ -63,10 +67,10 @@ export const FrameworksLibrariesList = [
         name: "MUI",
         icon: <SiMui className="text-[#007FFF]"/>
     },
-    {
-        name: "SwiftUI",
-        icon: <SiSwift className="text-[#F05138]"/>
-    },
+    // {
+    //     name: "SwiftUI",
+    //     icon: <SiSwift className="text-[#F05138]"/>
+    // },
 ]
 
 export const ToolsList = [
@@ -102,8 +106,8 @@ export const ToolsList = [
         name: "Vercel",
         icon: <SiVercel className="light:text-[#000000]"/>
     },
-    {
-        name: "XCode",
-        icon: <SiXcode className="text-[#147EFB]"/>
-    },
+    // {
+    //     name: "XCode",
+    //     icon: <SiXcode className="text-[#147EFB]"/>
+    // },
 ]

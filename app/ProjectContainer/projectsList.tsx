@@ -1,5 +1,25 @@
 export var projectsList = [
     {
+        title: "Virtual Stock Market",
+        github: "https://github.com/UlukbekM/stock-market",
+        link: "https://virtualstockmarket.vercel.app/",
+        description: "A virtual stock market simulator which enables users to trade stocks using virtual currency. The project integrates Supabase for user authentication, storage, and database management, while latest available stock ticker information is sourced from the Financial Modeling Prep API.",
+        icons: "Next.js, Redux, TypeScript, Tailwind CSS, Supabase, FMP API",
+        date: "Feb. 2024",
+        imageURL: "https://i.imgur.com/JBF1uFt.png",
+        images: [
+            "https://i.imgur.com/XSMfD1V.png",
+            "https://i.imgur.com/QMr39Kl.png",
+            "https://i.imgur.com/IlsMizu.png",
+            "https://i.imgur.com/WGcxhsp.png",
+            "https://i.imgur.com/hGXiWZu.png",
+            "https://i.imgur.com/rRhf1cC.png",
+            "https://i.imgur.com/EZHFqFK.png",
+            "https://i.imgur.com/WQzef7H.png",
+            // "https://i.imgur.com/JjdI2zW.png"
+        ]
+    },
+    {
         title: "Not-Twitter",
         github: "https://github.com/UlukbekM/not-twitter",
         link: "https://not-twitter-ulu.vercel.app/",

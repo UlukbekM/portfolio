@@ -6,8 +6,6 @@ export default function Toggle () {
     const {resolvedTheme, setTheme} = useTheme()
     const [mounted, setMounted] = useState(false)
     useEffect(()=>setMounted(true), [])
-    // console.log(theme)
-    // https://www.npmjs.com/package/next-themes
 
     return(<div>
         {mounted && 

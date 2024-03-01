@@ -1,5 +1,4 @@
 "use client"
-import Form from "./Form";
 import { useState } from "react"
 import { motion} from "framer-motion"
 
@@ -11,7 +10,6 @@ export default function Contact () {
         e.preventDefault()
         if(subject && message !== "") {
             window.open(`mailto:ulukbekmambetov@gmail.com?subject=${subject}&body=${message}`);
-            // setEmail("")
             setSubject("")
             setMessage("")
         }
@@ -24,20 +22,6 @@ export default function Contact () {
     className="grid place-items-center">
         <h1 className="text-4xl">Contact Me</h1>
         <form className="w-11/12" onSubmit={sendMessage}>
-        {/* <div className="my-5">
-            <label className="block mb-2">Your Name</label>
-            <input type="text" className="shadow-sm bg-gray-50 border border-gray-400 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5
-            dark:bg-gray-600 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
-            value={name} onChange={e => setName(e.target.value)}/>
-        </div> */}
-
-        {/* <div className="my-5">
-            <label className="block mb-2">Your Email</label>
-            <input required type="email" placeholder="Email" className="shadow-sm bg-gray-50 border border-gray-400 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5
-            dark:bg-gray-600 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
-            value={email} onChange={e => setEmail(e.target.value)}/>
-            <p id="helper-text-explanation" className="mt-2 text-sm text-gray-500 dark:text-gray-400">We'll never share your details. Read our.</p>
-        </div> */}
 
         <div className="my-5">
             <label className="block mb-2">Subject</label>
