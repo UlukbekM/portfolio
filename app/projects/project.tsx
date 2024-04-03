@@ -71,7 +71,7 @@ export default function Project (item:projectsInterface) {
         className="px-2 lg:px-5 lg:my-7 my-5">
                 <div className="embla overflow-hidden rounded-lg cursor-grab">
                     <div className="embla__viewport relative" ref={emblaRef}>
-                        <div className="embla__container flex">
+                        <div className="embla__container flex w-full">
                             {images.map((img,index) => (
                                 <img src={img} className="w-max embla__slide" alt={title} key={index}/>
                             ))}

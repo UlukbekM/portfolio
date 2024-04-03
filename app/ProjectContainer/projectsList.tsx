@@ -17,7 +17,7 @@ export var projectsList = [
             "https://i.imgur.com/EZHFqFK.png",
             "https://i.imgur.com/WQzef7H.png",
             // "https://i.imgur.com/JjdI2zW.png"
-        ]
+        ],
     },
     {
         title: "Not-Twitter",

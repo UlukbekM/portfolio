@@ -15,7 +15,8 @@ const variants = {
 
 export default function Projects () {
     
-    return(<div>
+    return(
+        <div>
             <h1 className="text-4xl">Projects</h1>
             <div className="container  mb-10">
                 <motion.div
@@ -27,6 +28,8 @@ export default function Projects () {
                         <Project key={project.title} {...project}/>
                     ))}
                 </motion.div>
+                
             </div>
-    </div>)
+        </div>
+    )
 }
