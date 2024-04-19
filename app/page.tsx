@@ -83,9 +83,7 @@ export default function Home() {
             animate={{ opacity: 1}}
             transition={{ duration: 0.4, delay: 2 }}
             className="my-7 text-xl">
-                Hello! 👋 I'm a dedicated web developer specializing in full-stack development. 
-                With expertise in React, Next.js, Tailwind, and TypeScript, 
-                I strive to deliver impactful and innovative solutions to exciting projects.
+                Hi there! 👋 I'm a web developer who's passionate about building awesome stuff. I'm experienced with React, Next.js, Tailwind CSS, and TypeScript, and I'm always learning new tools to stay ahead of the curve. Let's work together to make something amazing!
             </motion.div>
             <motion.div
             initial={{ opacity: 0}}
@@ -103,7 +101,7 @@ export default function Home() {
             </motion.div>
 
         
-            <div className="mt-20">
+            <div className="mt-10 md:mt-20">
                 <motion.h1
                 initial={{ opacity: 0}}
                 animate={{ opacity: 1}}
@@ -125,7 +123,7 @@ export default function Home() {
                 initial={{ opacity: 0}}
                 animate={{ opacity: 1}}
                 transition={{ duration: 0.6,delay: 2.5}} 
-                className="w-full grid place-items-center">
+                className="w-full grid place-items-center pb-5">
                     <Link href="/projects">
                         <button className="py-3 px-5 text-white bg-[#6246ea] hover:bg-[#583fd3] rounded-lg focus:ring-4 focus:outline-none my-auto group">
                             View More 

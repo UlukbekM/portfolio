@@ -1,6 +1,7 @@
 import { SiJavascript, SiTypescript, SiPython, SiHtml5, SiTailwindcss, SiSwift,SiCss3,SiCplusplus,
     SiReact,SiNextdotjs,SiBootstrap,SiNodedotjs,SiExpress,SiMui, SiAmazonaws,SiGit,SiMongodb,
     SiGithub,SiVisualstudiocode,SiXcode,SiVercel,SiPostman,SiMysql,SiRedux } from "react-icons/si"
+import { TbSql, TbBrandSupabase, TbApi  } from "react-icons/tb";
 
 export const LanguageList = [
     {
@@ -24,9 +25,13 @@ export const LanguageList = [
         icon: <SiCss3 className="text-[#1572B6]"/>
     },
     {
-        name: "C++",
-        icon: <SiCplusplus className="text-[#00599C]"/>
+        name: "SQL",
+        icon: <TbSql className="light:text-black dark:text-white"/>
     },
+    // {
+    //     name: "C++",
+    //     icon: <SiCplusplus className="text-[#00599C]"/>
+    // },
     // {
     //     name: "Swift",
     //     icon: <SiSwift className="text-[#F05138]"/>
@@ -37,7 +42,7 @@ export const LanguageList = [
 export const FrameworksLibrariesList = [
     {
         name: "React",
-        icon: <SiReact className="text-[#61DAFB]"/>
+        icon: <SiReact className="dark:text-[#61DAFB] text-[#037A9B]"/>
     },
     {
         name: "Next.js",
@@ -91,13 +96,17 @@ export const ToolsList = [
         icon: <SiGithub className="light:text-[#181717]"/>
     },
     {
-        name: "VS Code",
-        icon: <SiVisualstudiocode className="text-[#007ACC]"/>
+        name: "Supabase",
+        icon: <TbBrandSupabase className="dark:text-[#57DDAB] text-[#3d9b78]"/>
     },
-    {
-        name: "MySQL",
-        icon: <SiMysql className="text-[#4479A1]"/>
-    },
+    // {
+    //     name: "VS Code",
+    //     icon: <SiVisualstudiocode className="text-[#007ACC]"/>
+    // },
+    // {
+    //     name: "MySQL",
+    //     icon: <SiMysql className="text-[#4479A1]"/>
+    // },
     {
         name: "Postman",
         icon: <SiPostman className="text-[#FF6C37]"/>
@@ -105,6 +114,10 @@ export const ToolsList = [
     {
         name: "Vercel",
         icon: <SiVercel className="light:text-[#000000]"/>
+    },
+    {
+        name: "RESTful APIs",
+        icon: <TbApi className="light:text-black dark:text-white"/>
     },
     // {
     //     name: "XCode",

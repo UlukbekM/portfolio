@@ -18,6 +18,7 @@ export var projectsList = [
             "https://i.imgur.com/WQzef7H.png",
             // "https://i.imgur.com/JjdI2zW.png"
         ],
+        youtube: ""
     },
     {
         title: "Not-Twitter",
@@ -35,7 +36,8 @@ export var projectsList = [
             "https://i.imgur.com/wVJwhlS.png",
             "https://i.imgur.com/eACGBCj.png",
             "https://i.imgur.com/S8G8vJI.png",
-        ]
+        ],
+        youtube: ""
     },
     {
         title: "Guessify",
@@ -61,7 +63,8 @@ export var projectsList = [
             "https://i.imgur.com/HaxMAUq.png",
             "https://i.imgur.com/aAiaHkq.png",
             "https://i.imgur.com/WkH8A80.png"
-        ]
+        ],
+        youtube: ""
     },
     {
         title: "Movie Buddy",
@@ -83,7 +86,8 @@ export var projectsList = [
             "https://i.imgur.com/ka9jvwV.png",
             "https://i.imgur.com/yhsaHnj.png",
             "https://i.imgur.com/4pPhUgj.png"
-        ]
+        ],
+        youtube: ""
     },
     {
         title: "Sorting Algorithm Visualizer",
@@ -96,24 +100,26 @@ export var projectsList = [
         images: [
                 "https://i.imgur.com/WSnIDOx.png",
                 "https://i.imgur.com/4IUxm73.png",
-                "https://i.imgur.com/wCNv6gp.png"]
+                "https://i.imgur.com/wCNv6gp.png"],
+        youtube: ""
     },
-    {
-        title: "Tasks App",
-        github: "https://github.com/UlukbekM/mern",
-        link: "https://mernfront.vercel.app/",
-        description: "Implemented a full stack application utilizing the MERN (MongoDB, Express.js, React, Node.js) stack, enabling users to create, edit, and manage their personal tasks, complete with due dates and status tracking.",
-        icons: "MongoDB, Express.js, React, Node.js",
-        date: "Nov. 2022",
-        imageURL: "https://i.imgur.com/Clr3szE.png",
-        images: [
-            "https://i.imgur.com/Ce8GxWs.png",
-            "https://i.imgur.com/yYumq37.png",
-            "https://i.imgur.com/imRBXG1.png",
-            "https://i.imgur.com/keLq1jn.png",
-            "https://i.imgur.com/dcFqJZZ.png"
-        ]
-    },
+    // {
+    //     title: "Tasks App",
+    //     github: "https://github.com/UlukbekM/mern",
+    //     link: "https://mernfront.vercel.app/",
+    //     description: "Implemented a full stack application utilizing the MERN (MongoDB, Express.js, React, Node.js) stack, enabling users to create, edit, and manage their personal tasks, complete with due dates and status tracking.",
+    //     icons: "MongoDB, Express.js, React, Node.js",
+    //     date: "Nov. 2022",
+    //     imageURL: "https://i.imgur.com/Clr3szE.png",
+    //     images: [
+    //         "https://i.imgur.com/Ce8GxWs.png",
+    //         "https://i.imgur.com/yYumq37.png",
+    //         "https://i.imgur.com/imRBXG1.png",
+    //         "https://i.imgur.com/keLq1jn.png",
+    //         "https://i.imgur.com/dcFqJZZ.png"
+    //     ],
+    //     youtube: ""
+    // },
     {
         title: "MTA Subway Stations and Entrances",
         github: "https://github.com/UlukbekM/mtaproject",
@@ -126,6 +132,7 @@ export var projectsList = [
             "https://i.imgur.com/BIHfQU4.png",
             "https://i.imgur.com/2iBE0z0.png",
             "https://i.imgur.com/IpzHke0.png"
-        ]
+        ],
+        youtube: ""
     }
 ]

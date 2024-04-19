@@ -1,5 +1,5 @@
 "use client"
-import { useEffect, useCallback } from "react"
+import { useEffect, useCallback, useState } from "react"
 import { motion } from "framer-motion"
 import useEmblaCarousel from 'embla-carousel-react'
 
@@ -12,6 +12,7 @@ interface projectsInterface {
     date: string,
     imageURL: string,
     images: string[],
+    youtube: string
 }
 
 const imageAnimation = {
@@ -46,9 +47,10 @@ const cardVariants= {
 
 
 export default function Project (item:projectsInterface) {
-    let { title, github, description, icons, link, date, imageURL, images } = item
+    let { title, github, description, icons, link, date, imageURL, images, youtube } = item
 
     const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true })
+    const [toggle, setToggle] = useState<boolean>(false)
 
     const scrollPrev = useCallback(() => {
         if (emblaApi) emblaApi.scrollPrev()
@@ -57,6 +59,11 @@ export default function Project (item:projectsInterface) {
     const scrollNext = useCallback(() => {
         if (emblaApi) emblaApi.scrollNext()
     }, [emblaApi])
+
+    const handleClick = () => {
+        console.log(toggle)
+        setToggle(toggle => !toggle);
+    };
 
     return(
         <motion.div
@@ -69,6 +76,14 @@ export default function Project (item:projectsInterface) {
         <motion.div
         variants={cardVariants}
         className="px-2 lg:px-5 lg:my-7 my-5">
+            {toggle ? 
+                <div>
+                    <iframe className="w-full aspect-video" src={`https://www.youtube.com/embed/${youtube}`} 
+                    title="YouTube video player" frameBorder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+                </div>
+                :
                 <div className="embla overflow-hidden rounded-lg cursor-grab">
                     <div className="embla__viewport relative" ref={emblaRef}>
                         <div className="embla__container flex w-full">
@@ -93,6 +108,8 @@ export default function Project (item:projectsInterface) {
                         </div>
                     </div>
                 </div>
+            }
+
 
                 <div className="flex my-2 justify-between flex-col lg:flex-row md:flex-row">
                     <h3 className="text-3xl font-bold lg:tracking-wider md:tracking-wider text-gray-900 dark:text-gray-100 my-auto lg:basis-3/4">{title}</h3>
@@ -105,6 +122,9 @@ export default function Project (item:projectsInterface) {
                     </div>
 
                     <div className="my-2 lg:my-auto lg:basis-1/5 lg:text-right">
+                        {youtube &&
+                            <i onClick={handleClick} className={`bi bi-images ${toggle ? "bi-images" : "bi-play-btn-fill"} text-2xl mr-4 transition ease-in-out duration-75 hover:cursor-pointer hover:text-[#4e38bb] hover:dark:text-[#816bee]`}/> 
+                        }
                         <a href={github} target="_blank" rel="noopener noreferrer">
                             <i className="bi bi-github text-2xl mr-4 transition ease-in-out duration-75 hover:cursor-pointer hover:text-[#4e38bb] hover:dark:text-[#816bee]"/> 
                         </a>

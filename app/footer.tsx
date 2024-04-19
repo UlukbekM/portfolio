@@ -6,7 +6,7 @@ export default function Footer() {
             </div>
             <div>
                 <div>
-                    Say hey
+                    hi
                 </div>
                 <div>
                     929 320 1174
