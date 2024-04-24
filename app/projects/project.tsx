@@ -49,6 +49,10 @@ const cardVariants= {
 export default function Project (item:projectsInterface) {
     let { title, github, description, icons, link, date, imageURL, images, youtube } = item
 
+    // if(youtube) {
+    //     console.log(youtube)
+    // }
+
     const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true })
     const [toggle, setToggle] = useState<boolean>(false)
 
@@ -61,7 +65,6 @@ export default function Project (item:projectsInterface) {
     }, [emblaApi])
 
     const handleClick = () => {
-        console.log(toggle)
         setToggle(toggle => !toggle);
     };
 
@@ -72,16 +75,22 @@ export default function Project (item:projectsInterface) {
         viewport={{ once: true, amount: 0.2 }}
         transition={{ duration: 1, delay: 2,}}
         className="">
-
         <motion.div
         variants={cardVariants}
         className="px-2 lg:px-5 lg:my-7 my-5">
             {toggle ? 
                 <div>
-                    <iframe className="w-full aspect-video" src={`https://www.youtube.com/embed/${youtube}`} 
-                    title="YouTube video player" frameBorder="0" 
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                    referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+                    {title === "Virtual Stock Market" ? 
+                        <iframe className="w-full aspect-video" src="https://www.youtube.com/embed/91Gojt0ljAQ?si=ehIn3Vll5K6jPmEj"
+                        title="YouTube video player" frameBorder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>    
+                    :
+                        <iframe className="w-full aspect-video" src="https://www.youtube.com/embed/nBAyO8lnm04?si=gQ2l67q8Qjli5GXS" 
+                        title="YouTube video player" frameBorder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+                    }
                 </div>
                 :
                 <div className="embla overflow-hidden rounded-lg cursor-grab">

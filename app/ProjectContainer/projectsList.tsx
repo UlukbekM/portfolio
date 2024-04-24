@@ -18,7 +18,7 @@ export var projectsList = [
             "https://i.imgur.com/WQzef7H.png",
             // "https://i.imgur.com/JjdI2zW.png"
         ],
-        youtube: ""
+        youtube: "https://www.youtube.com/embed/91Gojt0ljAQ?si=ehIn3Vll5K6jPmEj"
     },
     {
         title: "Not-Twitter",
@@ -101,7 +101,7 @@ export var projectsList = [
                 "https://i.imgur.com/WSnIDOx.png",
                 "https://i.imgur.com/4IUxm73.png",
                 "https://i.imgur.com/wCNv6gp.png"],
-        youtube: ""
+        youtube: "https://www.youtube.com/embed/nBAyO8lnm04?si=gQ2l67q8Qjli5GXS"
     },
     // {
     //     title: "Tasks App",
