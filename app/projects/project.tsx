@@ -1,5 +1,5 @@
 "use client"
-import { useEffect, useCallback, useState } from "react"
+import { useCallback, useState } from "react"
 import { motion } from "framer-motion"
 import useEmblaCarousel from 'embla-carousel-react'
 
@@ -49,10 +49,6 @@ const cardVariants= {
 export default function Project (item:projectsInterface) {
     let { title, github, description, icons, link, date, imageURL, images, youtube } = item
 
-    // if(youtube) {
-    //     console.log(youtube)
-    // }
-
     const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true })
     const [toggle, setToggle] = useState<boolean>(false)
 
@@ -81,10 +77,10 @@ export default function Project (item:projectsInterface) {
             {toggle ? 
                 <div>
                     {title === "Virtual Stock Market" ? 
-                        <iframe className="w-full aspect-video" src="https://www.youtube.com/embed/91Gojt0ljAQ?si=ehIn3Vll5K6jPmEj"
+                        <iframe className="w-full aspect-video" src="https://www.youtube.com/embed/6G4JvInHZJo?si=D510ZagGfHanOOJv" 
                         title="YouTube video player" frameBorder="0" 
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                        referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>    
+                        referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe> 
                     :
                         <iframe className="w-full aspect-video" src="https://www.youtube.com/embed/nBAyO8lnm04?si=gQ2l67q8Qjli5GXS" 
                         title="YouTube video player" frameBorder="0" 
