@@ -3,7 +3,7 @@ export var projectsList = [
         title: "Virtual Stock Market",
         github: "https://github.com/UlukbekM/stock-market",
         link: "https://virtualstockmarket.vercel.app/",
-        description: "A virtual stock market simulator which enables users to trade stocks using virtual currency. The project integrates Supabase for user authentication, storage, and database management, while latest available stock ticker information is sourced from the Financial Modeling Prep API.",
+        description: "A virtual stock market simulator which enables users to trade stocks using virtual currency. Virtual Stock Market is built on Next.js with TypeScript. Developed the styling and responsive design using TailwindCSS and incorporated Redux for global state management. The project integrates Supabase for user authentication, storage, and database management, while latest available stock ticker information is sourced from the Financial Modeling Prep API.",
         icons: "Next.js, Redux, TypeScript, Tailwind CSS, Supabase, FMP API",
         date: "Feb. 2024",
         imageURL: "https://i.imgur.com/JBF1uFt.png",

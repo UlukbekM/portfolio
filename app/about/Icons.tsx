@@ -80,20 +80,20 @@ export const FrameworksLibrariesList = [
 
 export const ToolsList = [
     {
-        name: "AWS",
-        icon: <SiAmazonaws className="text-[#FF9900]"/>
-    },
-    {
-        name: "MongoDB",
-        icon: <SiMongodb className="text-[#47A248]"/>
+        name: "GitHub",
+        icon: <SiGithub className="light:text-[#181717]"/>
     },
     {
         name: "Git",
         icon: <SiGit className="text-[#F05032]"/>
     },
     {
-        name: "GitHub",
-        icon: <SiGithub className="light:text-[#181717]"/>
+        name: "AWS",
+        icon: <SiAmazonaws className="text-[#FF9900]"/>
+    },
+    {
+        name: "MongoDB",
+        icon: <SiMongodb className="text-[#47A248]"/>
     },
     {
         name: "Supabase",

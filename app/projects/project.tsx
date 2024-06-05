@@ -118,11 +118,11 @@ export default function Project (item:projectsInterface) {
 
                 <div className="flex my-2 justify-between flex-col lg:flex-row md:flex-row">
                     <h3 className="text-3xl font-bold lg:tracking-wider md:tracking-wider text-gray-900 dark:text-gray-100 my-auto lg:basis-3/4">{title}</h3>
-                    <h5 className="my-auto text-[#1A1A1A] dark:text-[#EBEBEB] lg:basis-1/4 lg:text-right">{date}</h5>
+                    <h5 className="my-auto font-semibold text-[#1A1A1A] dark:text-[#EBEBEB] lg:basis-1/4 lg:text-right">{date}</h5>
                 </div>
 
                 <div className="flex justify-between my-2 flex-col lg:flex-row md:flex-row lg:basis-4/5">
-                    <div className="my-auto dark:text-[#816bee] text-[#4e38bb]">
+                    <div className="my-auto dark:text-[#816bee] text-[#4e38bb] font-semibold">
                         <p className="align-middle hover:align-top">{icons}</p>
                     </div>
 
