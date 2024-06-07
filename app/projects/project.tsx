@@ -10,7 +10,7 @@ interface projectsInterface {
     description: string,
     icons: string,
     date: string,
-    imageURL: string,
+    // imageURL: string,
     images: string[],
     youtube: string
 }
@@ -47,7 +47,7 @@ const cardVariants= {
 
 
 export default function Project (item:projectsInterface) {
-    let { title, github, description, icons, link, date, imageURL, images, youtube } = item
+    let { title, github, description, icons, link, date, images, youtube } = item
 
     const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true })
     const [toggle, setToggle] = useState<boolean>(false)

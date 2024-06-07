@@ -5,8 +5,8 @@ export var projectsList = [
         link: "https://virtualstockmarket.vercel.app/",
         description: "A virtual stock market simulator which enables users to trade stocks using virtual currency. Virtual Stock Market is built on Next.js with TypeScript. Developed the styling and responsive design using TailwindCSS and incorporated Redux for global state management. The project integrates Supabase for user authentication, storage, and database management, while latest available stock ticker information is sourced from the Financial Modeling Prep API.",
         icons: "Next.js, Redux, TypeScript, Tailwind CSS, Supabase, FMP API",
-        date: "Feb. 2024",
-        imageURL: "https://i.imgur.com/JBF1uFt.png",
+        date: "Apr. 2024",
+        // imageURL: "https://i.imgur.com/JBF1uFt.png",
         images: [
             "https://i.imgur.com/XSMfD1V.png",
             "https://i.imgur.com/QMr39Kl.png",
@@ -25,9 +25,9 @@ export var projectsList = [
         github: "https://github.com/UlukbekM/not-twitter",
         link: "https://not-twitter-ulu.vercel.app/",
         description: "A full stack web application inspired by the popular social media platform Twitter, which includes user registration, authentication, and authorization features utilizing Node.js, Express.js, and JWT tokens.",
-        icons: "MongoDB, Express.js, React, Node.js, AWS S3, Bootstrap",
+        icons: "React, JavaScript, Node.js, Express.js, AWS S3, MongoDB, Bootstrap",
         date: "May 2023",
-        imageURL: "https://i.imgur.com/JBF1uFt.png",
+        // imageURL: "https://i.imgur.com/JBF1uFt.png",
         images: [
             "https://i.imgur.com/zRyxT6f.png",
             "https://i.imgur.com/w4zsAsS.png",
@@ -40,13 +40,29 @@ export var projectsList = [
         youtube: ""
     },
     {
+        title: "ulu's FACEIT stats",
+        github: "https://github.com/UlukbekM/faceit-stats",
+        link: "https://ulu-faceit-stats.vercel.app",
+        description: "A web application utilizing the FACEIT API to display users' performance and statistics for the game 'Counter-Strike 2.' Built with Next.js, TypeScript, TailwindCSS, and shadcn/ui, the application allows users to enter their FACEIT username to retrieve detailed information about their gameplay, including match history, and performance metrics.",
+        icons: "Next.js, TypeScript, TailwindCSS, shadcn/ui, FACEIT API",
+        date: "May 2024",
+        // imageURL: "https://i.imgur.com/JBF1uFt.png",
+        images: [
+            "https://i.imgur.com/MRpZ9Vb.png",
+            "https://i.imgur.com/7atawiP.png",
+            "https://i.imgur.com/T5sHK5b.png",
+            "https://i.imgur.com/jpUP2yZ.png",
+        ],
+        youtube: ""
+    },
+    {
         title: "Guessify",
         github: "https://github.com/UlukbekM/guessify",
         link: "https://guessify-ulukbek.vercel.app/",
         description: "A Spotify web application using the Spotify Web API that features a 'Guess That Song' game where users can choose a playlist from the Spotify API and attempt to guess the title of each song by listening to a short audio preview, with a leaderboard tracking the highest-scoring users using AWS DynamoDB as the database.",
         icons: "React, AWS DynamoDB, Spotify Web API",
         date: "Oct. 2022",
-        imageURL: "https://i.imgur.com/WEgqhzh.png",
+        // imageURL: "https://i.imgur.com/WEgqhzh.png",
         images: [
             "https://i.imgur.com/Mabpe8q.png",
             "https://i.imgur.com/Fxox5yz.png",
@@ -73,7 +89,7 @@ export var projectsList = [
         description: "Directed a team of four students throughout a semester-long project, establishing a clear roadmap with specific deadlines. Implemented the core features of the project's frontend, enabling users to browse popular movies, filter movies based on various criteria, and receive random movie suggestions. Utilized AWS Amplify and GraphQL, to allow users to favorite movies and store that data on the DynamoDB database, providing them with a personalized experience where they can easily favorite movies of their choice.",
         icons: "React, AWS Cognito, AWS Amplify, GraphQL, Material UI",
         date: "May 2022",
-        imageURL: "https://i.imgur.com/Duk5tSa.png",
+        // imageURL: "https://i.imgur.com/Duk5tSa.png",
         images: [
             "https://i.imgur.com/IeHdAfT.png",
             "https://i.imgur.com/OwHGXKS.png",
@@ -96,7 +112,7 @@ export var projectsList = [
         description: "Built a React-based sorting algorithm visualizer featuring quick sort, merge sort, insertion sort, and more. Allows interactive exploration of sorting processes, enhancing algorithmic understanding.",
         icons: "React, Tailwind CSS",
         date: "Aug. 2023",
-        imageURL: "https://i.imgur.com/WSnIDOx.png",
+        // imageURL: "https://i.imgur.com/WSnIDOx.png",
         images: [
                 "https://i.imgur.com/WSnIDOx.png",
                 "https://i.imgur.com/4IUxm73.png",
@@ -127,7 +143,7 @@ export var projectsList = [
         description: "Developed a comprehensive data visualization project, which involves showcasing over 450 NYC MTA Subway stations in NYC, along with nearly 2,000 Subway entrances. To accomplish this, I efficiently extracted and manipulated the required data from NYC Open Data's provided CSV files using SQL searches, ensuring it aligned with the project's specific requirements, creating a visually informative representation of the subway network.",
         icons: "Python, SQL",
         date: "Dec. 2021",
-        imageURL: "https://i.imgur.com/f7pfYIu.png",
+        // imageURL: "https://i.imgur.com/f7pfYIu.png",
         images: [
             "https://i.imgur.com/BIHfQU4.png",
             "https://i.imgur.com/2iBE0z0.png",
