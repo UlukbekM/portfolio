@@ -31,7 +31,7 @@ export default function RootLayout({
                 <link rel="shortcut icon" href="/favicon.ico" />
                 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"/>
             </head>
-            <GoogleAnalytics gaId="G-BCCGF6X130" />
+            <GoogleAnalytics gaId="G-4H10EQ1GVE" />
 
             <body className={`${prompt.className} overflow-y-scroll` }>
                 <Providers>
