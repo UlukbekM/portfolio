@@ -4,6 +4,7 @@ import { motion } from "framer-motion"
 import Link from "next/link"
 import { projectsList } from "./ProjectContainer/projectsList";
 import Project from "./projects/project";
+import { sendGAEvent } from '@next/third-parties/google'
 
 const typingContainer = {
     hidden: {
@@ -111,7 +112,7 @@ export default function Home() {
             transition={{ duration: 0.4, delay: 1 }}
             className="flex justify-center md:justify-end">
                 <Link href="/about">
-                    <button className="py-3 px-5 text-white bg-[#6246ea] hover:bg-[#583fd3] rounded-lg focus:ring-4 focus:outline-none group">
+                    <button onClick={() => sendGAEvent({ event: 'buttonClicked', value: 'About Me, Home' })} className="py-3 px-5 text-white bg-[#6246ea] hover:bg-[#583fd3] rounded-lg focus:ring-4 focus:outline-none group">
                         About Me  
                         <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
                         &nbsp;<i className="bi bi-arrow-right"></i>
@@ -145,12 +146,12 @@ export default function Home() {
                 transition={{ duration: 0.6,delay: 1.25}} 
                 className="w-full grid place-items-center pb-5">
                     <Link href="/projects">
-                        <button className="py-3 px-5 text-white bg-[#6246ea] hover:bg-[#583fd3] rounded-lg focus:ring-4 focus:outline-none my-auto group">
+                        <button onClick={() => sendGAEvent({ event: 'buttonClicked', value: 'More Projects, Home' })} className="py-3 px-5 text-white bg-[#6246ea] hover:bg-[#583fd3] rounded-lg focus:ring-4 focus:outline-none my-auto group">
                             View More 
                             <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
                             &nbsp;<i className="bi bi-arrow-right"></i>
                             </span>
-                            </button>
+                        </button>
                     </Link>
                 </motion.div>
             </div>
