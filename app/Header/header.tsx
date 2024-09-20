@@ -18,7 +18,7 @@ export default function Header () {
                 <NavItem title="Contact" href="/contact"/>
             </div>
 
-            <Toggle/>
+            {/* <Toggle/> */}
 
             <MobileHeader/>
 

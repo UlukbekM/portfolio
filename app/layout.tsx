@@ -6,7 +6,6 @@ import { Providers } from './Providers'
 import { Analytics } from '@vercel/analytics/react';
 import Footer from './footer'
 import { GoogleAnalytics } from '@next/third-parties/google'
-// https://tailwind-nextjs-starter-blog.vercel.app/blog
 
 const inter = Inter({ subsets: ['latin'] })
 const prompt = Prompt ({
