@@ -5,12 +5,12 @@ import { TbSql, TbBrandSupabase, TbApi  } from "react-icons/tb";
 
 export const LanguageList = [
     {
-        name: "JavaScript",
-        icon: <SiJavascript className="text-[#F7DF1E] bg-[#323330]"/>
-    },
-    {
         name: "TypeScript",
         icon: <SiTypescript className="text-[#3178C6]"/>
+    },
+    {
+        name: "JavaScript",
+        icon: <SiJavascript className="text-[#F7DF1E] bg-[#323330]"/>
     },
     {
         name: "Python",

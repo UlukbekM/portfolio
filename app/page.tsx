@@ -20,20 +20,20 @@ const typingContainer = {
     }
 }
 
-const typingContainer2nd = {
-    hidden: {
-        opacity: 0
-    }, 
-    show: {
-        opacity: 1,
-        y: 0,
-        transition: {
-            delayChildren: 1.0,
-            staggerChildren: 0.025,
-            ease: 'easeInOut',
-        }
-    }
-}
+// const typingContainer2nd = {
+//     hidden: {
+//         opacity: 0
+//     }, 
+//     show: {
+//         opacity: 1,
+//         y: 0,
+//         transition: {
+//             delayChildren: 1.0,
+//             staggerChildren: 0.025,
+//             ease: 'easeInOut',
+//         }
+//     }
+// }
 
 const typingText = {
     hidden: {
@@ -85,17 +85,15 @@ export default function Home() {
             transition={{ duration: 0.4, delay: 1 }}
             className="text-xl">
                 <div className="my-5">
-                I'm a software engineer based in NYC, passionate about developing great products. 
-                I enjoy making ideas come to life and building applications that help others in their daily lives. 
-                With experience in frontend development with JavaScript and React, as well as backend development using various technologies, 
-                I love developing applications that range from frontend to backend to full-stack development.
+                I'm a Master's student in Computer Science based in NYC, passionate about creating applications that bring ideas to life.
+I enjoy developing products that make a real difference in people's daily lives and am currently seeking opportunities in software engineering and full-stack development.
                 </div>
                 <div className="my-5 flex">
                     <a className="hover:text-[#6246ea] transition-colors cursor-pointer" href="https://github.com/UlukbekM" target="_blank" rel="noopener noreferrer">
                         <i className="bi bi-github px-2 text-3xl"/>
                     </a>
                     <a className="hover:text-[#6246ea] transition-colors cursor-pointer" href="https://www.linkedin.com/in/ulukbekm/" target="_blank" rel="noopener noreferrer">
-                        <i className="bi bi-linkedin px-2 text-3xl"></i>
+                        <i className="bi bi-linkedin px-2 text-3xl"/>
                     </a>
                     <a className="hover:text-[#6246ea] transition-colors cursor-pointer" href="mailto:ulukbekmambetov@gmail.com">
                         <i className="bi bi-envelope-fill px-2 text-3xl"/>
@@ -111,8 +109,8 @@ export default function Home() {
             animate={{ opacity: 1}}
             transition={{ duration: 0.4, delay: 1 }}
             className="flex justify-center md:justify-end">
-                <Link href="/about">
-                    <button onClick={() => sendGAEvent({ event: 'buttonClicked', value: 'About Me, Home' })} className="py-3 px-5 text-white bg-[#6246ea] hover:bg-[#583fd3] rounded-lg focus:ring-4 focus:outline-none group">
+                <Link href="/about" onClick={() => sendGAEvent({ event: 'buttonClicked', value: 'About Me, Home' })}>
+                    <button className="py-3 px-5 text-white bg-[#6246ea] hover:bg-[#583fd3] rounded-lg focus:ring-4 focus:outline-none group">
                         About Me  
                         <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
                         &nbsp;<i className="bi bi-arrow-right"></i>

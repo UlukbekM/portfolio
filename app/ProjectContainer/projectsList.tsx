@@ -43,7 +43,7 @@ export var projectsList = [
         title: "ulu's FACEIT stats",
         github: "https://github.com/UlukbekM/faceit-stats",
         link: "https://ulu-faceit-stats.vercel.app",
-        description: "A web application utilizing the FACEIT API to display users' performance and statistics for the game 'Counter-Strike 2.' Built with Next.js, TypeScript, TailwindCSS, and shadcn/ui, the application allows users to enter their FACEIT username to retrieve detailed information about their gameplay, including match history, and performance metrics.",
+        description: `A web application utilizing the FACEIT API to display users' performance and statistics for the game 'Counter-Strike 2.' Built with Next.js, TypeScript, TailwindCSS, and shadcn/ui, the application allows users to enter their FACEIT username to retrieve detailed information about their gameplay, including match history, and performance metrics. P.S. Click on "ulu's" on the homepage to play around with the website if you don't have a FACEIT username in mind.`,
         icons: "Next.js, TypeScript, TailwindCSS, shadcn/ui, FACEIT API",
         date: "May 2024",
         // imageURL: "https://i.imgur.com/JBF1uFt.png",

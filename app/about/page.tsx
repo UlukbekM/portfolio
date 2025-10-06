@@ -14,19 +14,13 @@ export default function About () {
         <h1 className="text-4xl my-5">About Me</h1>
 
         <div className="my-5 ">
-        Hello there! My name is Ulukbek Mambetov, and I'm a passionate software engineer with a focus on web development. 
-        I began my journey as a frontend developer using React, but eventually expanded my skill set to become be capable of frontend and backend development. 
-        My current tech stack revolves around Next.js, TypeScript, and TailwindCSS, with additional tools tailored to the needs of each project. 
-        But I am always learning new technologies in order to be able to create great products.
+        Hello! My name is Ulukbek Mambetov, and I'm a Master's student in Computer Science with a passion for software development and full-stack web development.
+        I am capable of both frontend and backend development, with flexibility to work across the full stack. My current tech stack includes Next.js, TypeScript, and TailwindCSS, along with experience using frameworks, databases, and tools tailored to each individual project's needs.
         </div>
 
         <div className="my-5 ">
-        I am always working on side projects where I learn new technologies and improve on my work. 
-        When I'm not busy coding you can find me at the gym staying physically active. 
-        In my free time, I enjoy playing video games with friends. 
-        Using my skills and experience, I am actively seeking a software engineering position to 
-        join a team of bright minded individuals in order to contribute to exciting and meaningful projects. 
-        Feel free to reach out to me via email!
+I'm actively seeking a software engineering opportunity where I can apply my skills, collaborate with a team of bright-minded individuals, and contribute to meaningful projects.
+Feel free to reach out to me via email!
         </div>
 
         <div className="my-5">
@@ -48,14 +42,14 @@ export default function About () {
                 </div>
             </div>
 
-            <div>
+            {/* <div>
                 <h1 className="font-medium text-lg">Tools:</h1>
                 <div className="flex flex-wrap">
                     {ToolsList.map((icon) => (
                         <SkillIcon key={icon.name} {...icon}/>
                     ))}
                 </div>
-            </div>
+            </div> */}
         </div>
 
         <div className="mb-5"> 

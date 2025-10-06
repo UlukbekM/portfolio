@@ -19,7 +19,7 @@ export default function Contact () {
     initial={{ opacity: 0}}
     animate={{ opacity: 1}}
     transition={{ duration: 0.4 }}
-    className="grid place-items-center">
+    className="grid place-items-center w-full sm:px-6 xl:px-0 max-w-2xl md:max-w-3xl lg:max-w-4xl xl:max-w-5xl">
         <h1 className="text-4xl">Contact Me</h1>
         <form className="w-11/12" onSubmit={sendMessage}>
 
